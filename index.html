@@ -52,7 +52,7 @@
 
     <!-- Top Announcement Bar -->
     <div class="bg-zinc-950 text-zinc-400 text-[10px] sm:text-xs tracking-[0.2em] uppercase py-2 px-4 text-center border-b border-zinc-900 font-medium">
-         
+        Free Delivery on Orders Over 2000৳
     </div>
 
     <!-- Navigation Header -->
@@ -79,60 +79,100 @@
         </div>
     </header>
 
-    <!-- Hero Banner with 3 Product Ads & Clickable Buttons -->
-<section class="bg-black py-12 px-4 sm:px-8 border-b border-zinc-900">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Hero Banner -->
+    <section class="bg-black py-12 px-4 sm:px-8 border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
 
-        <!-- Ad 1 (Premium Check Shirt) -->
-        <div class="relative overflow-hidden aspect-[4/5] bg-zinc-900 border border-zinc-800 flex flex-col justify-end p-6 group cursor-pointer" onclick="showDetails(1)">
-            <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/d1b8db0379f035dc950ece4ea1a5fc19.jpg" alt="Premium Check Shirt" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <div class="relative z-10 space-y-2">
-                <span class="text-[10px] tracking-[0.2em] uppercase text-zinc-400 font-semibold">Best Seller</span>
-                <h3 class="text-lg font-bold text-white uppercase tracking-wider">Premium Check Shirt</h3>
-                <button class="bg-white hover:bg-zinc-200 text-black text-[10px] font-bold py-2 px-4 w-fit transition uppercase tracking-widest">Shop Now</button>
+            <!-- Ad 1 -->
+            <div class="relative overflow-hidden aspect-[4/5] bg-zinc-900 border border-zinc-800 flex flex-col justify-end p-6 group cursor-pointer" onclick="showDetails(1)">
+                <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/d1b8db0379f035dc950ece4ea1a5fc19.jpg" alt="Premium Check Shirt" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <div class="relative z-10 space-y-2">
+                    <span class="text-[10px] tracking-[0.2em] uppercase text-zinc-400 font-semibold">Best Seller</span>
+                    <h3 class="text-lg font-bold text-white uppercase tracking-wider">Premium Check Shirt</h3>
+                    <button class="bg-white hover:bg-zinc-200 text-black text-[10px] font-bold py-2 px-4 w-fit transition uppercase tracking-widest">Shop Now</button>
+                </div>
             </div>
-        </div>
 
-        <!-- Ad 2 (Sporty Piping Tee) -->
-        <div class="relative overflow-hidden aspect-[4/5] bg-zinc-900 border border-zinc-800 flex flex-col justify-end p-6 group cursor-pointer" onclick="showDetails(2)">
-            <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0844444531791d41868e9e9e29e79b43.jpg" alt="Sporty Piping Tee" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <div class="relative z-10 space-y-2">
-                <span class="text-[10px] tracking-[0.2em] uppercase text-zinc-400 font-semibold">Trending</span>
-                <h3 class="text-lg font-bold text-white uppercase tracking-wider">Sporty Piping Tee</h3>
-                <button class="bg-white hover:bg-zinc-200 text-black text-[10px] font-bold py-2 px-4 w-fit transition uppercase tracking-widest">Shop Now</button>
+            <!-- Ad 2 -->
+            <div class="relative overflow-hidden aspect-[4/5] bg-zinc-900 border border-zinc-800 flex flex-col justify-end p-6 group cursor-pointer" onclick="showDetails(3)">
+                <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0844444531791d41868e9e9e29e79b43.jpg" alt="Sporty Piping Tee" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <div class="relative z-10 space-y-2">
+                    <span class="text-[10px] tracking-[0.2em] uppercase text-zinc-400 font-semibold">Trending</span>
+                    <h3 class="text-lg font-bold text-white uppercase tracking-wider">Sporty Piping Tee</h3>
+                    <button class="bg-white hover:bg-zinc-200 text-black text-[10px] font-bold py-2 px-4 w-fit transition uppercase tracking-widest">Shop Now</button>
+                </div>
             </div>
-        </div>
 
-        <!-- Ad 3 (Acid Wash Tee) -->
-        <div class="relative overflow-hidden aspect-[4/5] bg-zinc-900 border border-zinc-800 flex flex-col justify-end p-6 group cursor-pointer" onclick="showDetails(3)">
-            <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/10d6b78f568b14dc0c249abb68b196f7.jpg" alt="Acid Wash Tee" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <div class="relative z-10 space-y-2">
-                <span class="text-[10px] tracking-[0.2em] uppercase text-zinc-400 font-semibold">New Arrival</span>
-                <h3 class="text-lg font-bold text-white uppercase tracking-wider">Acid Wash Tee</h3>
-                <button class="bg-white hover:bg-zinc-200 text-black text-[10px] font-bold py-2 px-4 w-fit transition uppercase tracking-widest">Shop Now</button>
+            <!-- Ad 3 -->
+            <div class="relative overflow-hidden aspect-[4/5] bg-zinc-900 border border-zinc-800 flex flex-col justify-end p-6 group cursor-pointer" onclick="showDetails(5)">
+                <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/10d6b78f568b14dc0c249abb68b196f7.jpg" alt="Acid Wash Tee" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <div class="relative z-10 space-y-2">
+                    <span class="text-[10px] tracking-[0.2em] uppercase text-zinc-400 font-semibold">New Arrival</span>
+                    <h3 class="text-lg font-bold text-white uppercase tracking-wider">Acid Wash Tee</h3>
+                    <button class="bg-white hover:bg-zinc-200 text-black text-[10px] font-bold py-2 px-4 w-fit transition uppercase tracking-widest">Shop Now</button>
+                </div>
             </div>
+
         </div>
-
-    </div>
-</section>
-
-
+    </section>
 
     <!-- Main Product Section -->
     <main class="max-w-7xl mx-auto px-4 sm:px-8 py-12 flex-grow w-full">
-        <div class="flex items-center justify-between mb-8 pb-4 border-b border-zinc-900">
-             
-             
-    
+        <!-- New Feature: Search Bar and Category Filters -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 pb-4 border-b border-zinc-900 gap-4">
+            <!-- Search Bar -->
+            <div class="relative w-full md:w-72">
+                <input type="text" id="search-input" oninput="filterProducts()" placeholder="Search products..." class="w-full bg-zinc-900 text-white placeholder-zinc-500 border border-zinc-800 rounded-none px-4 py-2 text-xs focus:outline-none focus:border-white transition pl-9">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-zinc-500 text-xs"></i>
+            </div>
+            
+            <!-- Category Filter Buttons -->
+            <div class="flex items-center space-x-2 overflow-x-auto pb-2 md:pb-0 custom-scrollbar text-xs">
+                <button onclick="filterCategory('all')" class="category-btn bg-white text-black px-4 py-1.5 font-semibold uppercase tracking-wider transition">All</button>
+                <button onclick="filterCategory('tee')" class="category-btn border border-zinc-800 hover:border-white text-zinc-400 hover:text-white px-4 py-1.5 font-semibold uppercase tracking-wider transition">Tees</button>
+                <button onclick="filterCategory('shirt')" class="category-btn border border-zinc-800 hover:border-white text-zinc-400 hover:text-white px-4 py-1.5 font-semibold uppercase tracking-wider transition">Shirts</button>
+                <button onclick="filterCategory('polo')" class="category-btn border border-zinc-800 hover:border-white text-zinc-400 hover:text-white px-4 py-1.5 font-semibold uppercase tracking-wider transition">Polos</button>
+            </div>
+        </div>
 
         <!-- Product Grid -->
         <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-10">
             <!-- Dynamically Rendered via JS -->
         </div>
     </main>
+
+    <!-- New Feature: Customer Reviews Section -->
+    <section class="bg-black py-12 px-4 sm:px-8 border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto space-y-6">
+            <h3 class="text-center text-xs font-bold uppercase tracking-[0.25em] text-zinc-400">Customer Feedback</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-zinc-950 p-6 border border-zinc-900 space-y-3">
+                    <div class="flex text-yellow-500 text-xs space-x-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-zinc-400 leading-relaxed">"The fabric quality is amazing. Perfectly fits the minimal street aesthetic!"</p>
+                    <p class="text-[10px] font-bold uppercase text-white tracking-widest">- Tanvir H.</p>
+                </div>
+                <div class="bg-zinc-950 p-6 border border-zinc-900 space-y-3">
+                    <div class="flex text-yellow-500 text-xs space-x-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-zinc-400 leading-relaxed">"Fast delivery via WhatsApp ordering. Acid wash tee color looks premium."</p>
+                    <p class="text-[10px] font-bold uppercase text-white tracking-widest">- Saimon R.</p>
+                </div>
+                <div class="bg-zinc-950 p-6 border border-zinc-900 space-y-3">
+                    <div class="flex text-yellow-500 text-xs space-x-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-zinc-400 leading-relaxed">"Top notch fitting and comfortable materials. Highly recommended!"</p>
+                    <p class="text-[10px] font-bold uppercase text-white tracking-widest">- Rakib A.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/8801321543071?text=Hello%20Sakil%20Style%20Hub,%20I%20have%20a%20question%20about%20your%20collection." 
@@ -221,115 +261,57 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-black text-zinc-600 text-[10px] tracking-widest uppercase py-8 border-t border-zinc-900 text-center space-y-2">
+    <!-- Footer with Social Links -->
+    <footer class="bg-black text-zinc-600 text-[10px] tracking-widest uppercase py-8 border-t border-zinc-900 text-center space-y-4">
         <p class="text-zinc-400 font-bold">Sakil Style Hub</p>
+        
+        <!-- New Feature: Social Links -->
+        <div class="flex justify-center space-x-4 text-zinc-400 text-sm">
+            <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/8801321543071" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
         <p>&copy; 2026 Sakil Style Hub. All Rights Reserved.</p>
     </footer>
 
     <script>
         const products = [
-            { 
-                id: 1, 
-                title: "Off White Check Shirt", 
-                price: 399, 
-                img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/d1b8db0379f035dc950ece4ea1a5fc19.jpg", 
-                desc: "Premium organic cotton check shirt featuring stylized streetwear pattern." 
-            },
-            { 
-                id: 2, 
-                title: "Off White Casual Shirt", 
-                price: 789, 
-                img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0844444531791d41868e9e9e29e79b43.jpg", 
-                desc: "Retro-styled vintage heavy-weight cotton fabric streetwear shirt." 
-            },
-            { 
-                id: 3, 
-                title: "Sporty Piping Black Tee", 
-                price: 369, 
-                img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0844444531791d41868e9e9e29e79b43.jpg", 
-                desc: "Sleek obsidian black crew neck with breathable knit blend." 
-            },
-            { 
-                id: 4, 
-                title: "Minimalist Beige Casual Tee", 
-                price: 369, 
-                img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0f2698ce8f99ab18513cc693e90bce16.jpg", 
-                desc: "Soft earth-tone beige half-sleeve top ideal for daily casual wear." 
-            },
-            { 
-                id: 5, 
-                title: "Acid Wash Streetwear Tee", 
-                price: 369, 
-                img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/10d6b78f568b14dc0c249abb68b196f7.jpg", 
-                desc: "Bold typography printed on relaxed-fit distressed washed cotton." 
-            },
-            { 
-                id: 6, 
-                title: "Earth Brown Polo Tee", 
-                price: 369, 
-                img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/file_00000000118882118fb98454cd248639.png", 
-                desc: "Elegantly tailored brown polo style t-shirt with ribbed collar." 
-            },
-            { 
-                id: 7, 
-                title: "Premium Brown Polo Shirt", 
-                price: 789, 
-                img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/2ad8a953c262df61ac02e2362dfb1a97.jpg", 
-                desc: "Heavy-weight classic polo design tailored for urban comfort." 
-            },
-            { 
-                id: 8, 
-                title: "Urban Black Street Tee", 
-                price: 369, 
-                img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/257d870e812c1b8156c506898c899b22.jpg", 
-                desc: "Sleek obsidian black crew neck with breathable knit blend." 
-            },
-            { 
-                id: 9, 
-                title: "Minimal Beige Oversized Tee", 
-                price: 369, 
-                img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/257d870e812c1b8156c506898c899b22.jpg", 
-                desc: "Soft earth-tone beige half-sleeve top ideal for daily wear." 
-            },
-            { 
-                id: 10, 
-                title: "Vintage Acid Wash Tee", 
-                price: 369, 
-                img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/5faa70fd7a870bfa4b3bdc814593a45b.jpg", 
-                desc: "Relaxed-fit distressed washed cotton for urban aesthetic." 
-            },
-            { 
-                id: 11, 
-                title: "Classic Brown Polo Tee", 
-                price: 369, 
-                img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/fbaaa53529d1c869974a7504220cdb89.jpg", 
-                desc: "Elegantly tailored brown polo style t-shirt with ribbed collar." 
-            },
-            { 
-                id: 12, 
-                title: "Embroidered White Ringer Tee", 
-                price: 369, 
-                img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/file_00000000118882118fb98454cd248639.png", 
-                desc: "Crisp white cotton ringer t-shirt finished with detailed chest emblem." 
-            }
+            { id: 1, title: "Off White Check Shirt", category: "shirt", price: 399, img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/d1b8db0379f035dc950ece4ea1a5fc19.jpg", desc: "Premium organic cotton check shirt featuring stylized streetwear pattern." },
+            { id: 2, title: "Off White Casual Shirt", category: "shirt", price: 789, img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0844444531791d41868e9e9e29e79b43.jpg", desc: "Retro-styled vintage heavy-weight cotton fabric streetwear shirt." },
+            { id: 3, title: "Sporty Piping Black Tee", category: "tee", price: 369, img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0844444531791d41868e9e9e29e79b43.jpg", desc: "Sleek obsidian black crew neck with breathable knit blend." },
+            { id: 4, title: "Minimalist Beige Casual Tee", category: "tee", price: 369, img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0f2698ce8f99ab18513cc693e90bce16.jpg", desc: "Soft earth-tone beige half-sleeve top ideal for daily casual wear." },
+            { id: 5, title: "Acid Wash Streetwear Tee", category: "tee", price: 369, img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/10d6b78f568b14dc0c249abb68b196f7.jpg", desc: "Bold typography printed on relaxed-fit distressed washed cotton." },
+            { id: 6, title: "Earth Brown Polo Tee", category: "polo", price: 369, img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/file_00000000118882118fb98454cd248639.png", desc: "Elegantly tailored brown polo style t-shirt with ribbed collar." },
+            { id: 7, title: "Premium Brown Polo Shirt", category: "polo", price: 789, img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/2ad8a953c262df61ac02e2362dfb1a97.jpg", desc: "Heavy-weight classic polo design tailored for urban comfort." },
+            { id: 8, title: "Urban Black Street Tee", category: "tee", price: 369, img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/257d870e812c1b8156c506898c899b22.jpg", desc: "Sleek obsidian black crew neck with breathable knit blend." },
+            { id: 9, title: "Minimal Beige Oversized Tee", category: "tee", price: 369, img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/257d870e812c1b8156c506898c899b22.jpg", desc: "Soft earth-tone beige half-sleeve top ideal for daily wear." },
+            { id: 10, title: "Vintage Acid Wash Tee", category: "tee", price: 369, img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/5faa70fd7a870bfa4b3bdc814593a45b.jpg", desc: "Relaxed-fit distressed washed cotton for urban aesthetic." },
+            { id: 11, title: "Classic Brown Polo Tee", category: "polo", price: 369, img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/fbaaa53529d1c869974a7504220cdb89.jpg", desc: "Elegantly tailored brown polo style t-shirt with ribbed collar." },
+            { id: 12, title: "Embroidered White Ringer Tee", category: "tee", price: 369, img: "https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/file_00000000118882118fb98454cd248639.png", desc: "Crisp white cotton ringer t-shirt finished with detailed chest emblem." }
         ];
 
         let cart = [];
         let selectedSize = 'M';
         let currentModalProduct = null;
+        let activeCategory = 'all';
 
         document.addEventListener('DOMContentLoaded', () => {
-            renderProducts();
+            renderProducts(products);
             updateCartUI();
         });
 
-        function renderProducts() {
+        function renderProducts(items) {
             const grid = document.getElementById('product-grid');
             if (!grid) return;
             grid.innerHTML = '';
 
-            products.forEach(p => {
+            if(items.length === 0) {
+                grid.innerHTML = `<p class="col-span-full text-center text-zinc-500 text-xs py-8 uppercase tracking-widest">No products found</p>`;
+                return;
+            }
+
+            items.forEach(p => {
                 const card = document.createElement('div');
                 card.className = "group cursor-pointer flex flex-col justify-between";
                 card.onclick = () => showDetails(p.id);
@@ -343,11 +325,34 @@
                     </div>
                     <div>
                         <h4 class="font-semibold text-white text-xs uppercase tracking-wider group-hover:text-zinc-400 transition">${p.title}</h4>
-                        <p class="text-[10px] text-zinc-500 mt-1 uppercase tracking-widest">Fixed Price • 369৳</p>
+                        <p class="text-[10px] text-zinc-500 mt-1 uppercase tracking-widest">Fixed Price • ${p.price}৳</p>
                     </div>
                 `;
                 grid.appendChild(card);
             });
+        }
+
+        function filterProducts() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const filtered = products.filter(p => {
+                const matchesSearch = p.title.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query);
+                const matchesCategory = activeCategory === 'all' || p.category === activeCategory;
+                return matchesSearch && matchesCategory;
+            });
+            renderProducts(filtered);
+        }
+
+        function filterCategory(cat) {
+            activeCategory = cat;
+            
+            // Update button styles
+            const btns = document.querySelectorAll('.category-btn');
+            btns.forEach(btn => {
+                btn.className = "category-btn border border-zinc-800 hover:border-white text-zinc-400 hover:text-white px-4 py-1.5 font-semibold uppercase tracking-wider transition";
+            });
+            event.target.className = "category-btn bg-white text-black px-4 py-1.5 font-semibold uppercase tracking-wider transition";
+
+            filterProducts();
         }
 
         function showDetails(id) {
@@ -395,20 +400,17 @@
             document.getElementById('cartModal').classList.add('hidden');
         }
 
-        function addToCart(productId, size) {
-            const product = products.find(p => p.id === productId);
-            const existingItem = cart.find(item => item.id === productId && item.size === size);
+        function addToCart(id, size) {
+            const product = products.find(p => p.id === id);
+            if (!product) return;
 
+            const existingItem = cart.find(item => item.id === id && item.size === size);
             if (existingItem) {
                 existingItem.qty += 1;
             } else {
                 cart.push({ ...product, size, qty: 1 });
             }
-            updateCartUI();
-        }
 
-        function removeFromCart(index) {
-            cart.splice(index, 1);
             updateCartUI();
         }
 
@@ -417,70 +419,89 @@
             const cartCount = document.getElementById('cart-count');
             const cartTotal = document.getElementById('cart-total');
 
+            if (!cartList) return;
+
             cartList.innerHTML = '';
             let total = 0;
-            let totalQty = 0;
+            let count = 0;
 
             if (cart.length === 0) {
-                cartList.innerHTML = `<p class="text-xs uppercase tracking-widest text-zinc-500 text-center py-8">Your bag is empty</p>`;
+                cartList.innerHTML = `<p class="text-center text-zinc-500 text-xs py-10 uppercase tracking-widest">Your bag is empty</p>`;
             } else {
                 cart.forEach((item, index) => {
                     total += item.price * item.qty;
-                    totalQty += item.qty;
+                    count += item.qty;
 
-                    const itemEl = document.createElement('div');
-                    itemEl.className = "flex items-center justify-between border-b border-zinc-900 pb-3";
-                    itemEl.innerHTML = `
+                    const cartItem = document.createElement('div');
+                    cartItem.className = "flex items-center justify-between border-b border-zinc-900 pb-3";
+                    cartItem.innerHTML = `
                         <div class="flex items-center space-x-3">
-                            <img src="${item.img}" class="w-12 h-16 object-cover bg-black border border-zinc-900">
+                            <img src="${item.img}" alt="${item.title}" class="w-12 h-14 object-cover border border-zinc-800">
                             <div>
                                 <h5 class="text-xs font-bold uppercase tracking-wider text-white">${item.title}</h5>
-                                <p class="text-[10px] text-zinc-500 uppercase tracking-widest">Size: ${item.size} | Qty: ${item.qty}</p>
-                                <p class="text-xs text-white font-semibold mt-1">${item.price * item.qty}৳</p>
+                                <p class="text-[10px] text-zinc-500 uppercase tracking-widest">Size: ${item.size} • ${item.price}৳</p>
+                                <div class="flex items-center space-x-2 mt-1">
+                                    <button onclick="changeQty(${index}, -1)" class="text-zinc-400 hover:text-white text-xs px-1.5 bg-zinc-900 border border-zinc-800">-</button>
+                                    <span class="text-xs font-bold">${item.qty}</span>
+                                    <button onclick="changeQty(${index}, 1)" class="text-zinc-400 hover:text-white text-xs px-1.5 bg-zinc-900 border border-zinc-800">+</button>
+                                </div>
                             </div>
                         </div>
-                        <button onclick="removeFromCart(${index})" class="text-zinc-500 hover:text-white transition text-xs">
+                        <button onclick="removeItem(${index})" class="text-zinc-600 hover:text-red-500 transition text-xs">
                             <i class="fa-solid fa-trash-can"></i>
                         </button>
                     `;
-                    cartList.appendChild(itemEl);
+                    cartList.appendChild(cartItem);
                 });
             }
 
-            cartCount.innerText = totalQty;
-            cartTotal.innerText = total + "৳";
+            cartCount.innerText = count;
+            cartTotal.innerText = total + '৳';
+        }
+
+        function changeQty(index, change) {
+            cart[index].qty += change;
+            if (cart[index].qty <= 0) {
+                cart.splice(index, 1);
+            }
+            updateCartUI();
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            updateCartUI();
         }
 
         function checkoutWhatsApp() {
+            if (cart.length === 0) {
+                alert('Your cart is empty!');
+                return;
+            }
+
             const name = document.getElementById('cust-name').value.trim();
             const phone = document.getElementById('cust-phone').value.trim();
             const address = document.getElementById('cust-address').value.trim();
 
-            if (cart.length === 0) {
-                alert("Please add items to your cart first.");
-                return;
-            }
-
             if (!name || !phone || !address) {
-                alert("Please fill in all shipping details.");
+                alert('Please fill in all shipping details.');
                 return;
             }
 
-            let msg = `*NEW ORDER - SAKIL STYLE HUB*\n\n`;
-            msg += `*Customer Details:*\nName: ${name}\nPhone: ${phone}\nAddress: ${address}\n\n`;
-            msg += `*Ordered Items:*\n`;
+            let text = `*New Order - Sakil Style Hub*\n\n`;
+            text += `*Customer Details:*\nName: ${name}\nPhone: ${phone}\nAddress: ${address}\n\n`;
+            text += `*Order Items:*\n`;
 
-            let grandTotal = 0;
-            cart.forEach((item, idx) => {
+            let total = 0;
+            cart.forEach((item, i) => {
                 const subtotal = item.price * item.qty;
-                grandTotal += subtotal;
-                msg += `${idx + 1}. ${item.title} (${item.size}) x ${item.qty} = ${subtotal}৳\n`;
+                total += subtotal;
+                text += `${i + 1}. ${item.title} (${item.size}) x${item.qty} - ${subtotal}৳\n`;
             });
 
-            msg += `\n*Total Amount:* ${grandTotal}৳`;
+            text += `\n*Total Amount:* ${total}৳`;
 
-            const encodedMsg = encodeURIComponent(msg);
-            window.open(`https://wa.me/8801321543071?text=${encodedMsg}`, '_blank');
+            const encodedText = encodeURIComponent(text);
+            window.open(`https://wa.me/8801321543071?text=${encodedText}`, '_blank');
         }
     </script>
 </body>
