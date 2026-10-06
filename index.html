@@ -80,44 +80,313 @@
     </header>
 
     <!-- Hero Banner -->
-    <section class="bg-black py-12 px-4 sm:px-8 border-b border-zinc-900">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Modern Sliding Hero Ads -->
+<section class="bg-black py-8 px-4 sm:px-8 border-b border-zinc-900 overflow-hidden">
 
-            <!-- Ad 1 -->
-            <div class="relative overflow-hidden aspect-[4/5] bg-zinc-900 border border-zinc-800 flex flex-col justify-end p-6 group cursor-pointer" onclick="showDetails(1)">
-                <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/d1b8db0379f035dc950ece4ea1a5fc19.jpg" alt="Premium Check Shirt" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-                <div class="relative z-10 space-y-2">
-                    <span class="text-[10px] tracking-[0.2em] uppercase text-zinc-400 font-semibold">Best Seller</span>
-                    <h3 class="text-lg font-bold text-white uppercase tracking-wider">Premium Check Shirt</h3>
-                    <button class="bg-white hover:bg-zinc-200 text-black text-[10px] font-bold py-2 px-4 w-fit transition uppercase tracking-widest">Shop Now</button>
+    <div class="max-w-7xl mx-auto relative">
+
+        <!-- Slider -->
+        <div id="heroSlider"
+             class="flex transition-transform duration-700 ease-in-out"
+             style="transform: translateX(0%);">
+
+            <!-- Slide 1 -->
+            <div class="hero-slide min-w-full px-1">
+                <div onclick="showDetails(1)"
+                     class="relative overflow-hidden aspect-[16/7] sm:aspect-[16/6] bg-zinc-900 border border-zinc-800 cursor-pointer group">
+
+                    <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/d1b8db0379f035dc950ece4ea1a5fc19.jpg"
+                         alt="Premium Check Shirt"
+                         class="absolute inset-0 w-full h-full object-cover
+                                group-hover:scale-105 transition-transform duration-700">
+
+                    <!-- Dark Gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-r
+                                from-black/90 via-black/40 to-transparent"></div>
+
+                    <!-- Content -->
+                    <div class="absolute inset-0 flex items-center p-6 sm:p-12">
+
+                        <div class="max-w-md space-y-3">
+
+                            <span class="inline-block text-[10px] sm:text-xs
+                                         tracking-[0.25em] uppercase
+                                         text-zinc-300 font-semibold">
+                                Best Seller
+                            </span>
+
+                            <h2 class="text-2xl sm:text-4xl md:text-5xl
+                                       font-black text-white uppercase
+                                       tracking-wider">
+                                Premium Check Shirt
+                            </h2>
+
+                            <p class="text-zinc-300 text-xs sm:text-sm max-w-sm">
+                                Premium quality fashion for your everyday style.
+                            </p>
+
+                            <button
+                                class="mt-2 bg-white hover:bg-zinc-200
+                                       text-black text-[10px] sm:text-xs
+                                       font-bold py-3 px-6
+                                       uppercase tracking-widest
+                                       transition-all duration-300
+                                       hover:px-8">
+                                Shop Now →
+                            </button>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Ad 2 -->
-            <div class="relative overflow-hidden aspect-[4/5] bg-zinc-900 border border-zinc-800 flex flex-col justify-end p-6 group cursor-pointer" onclick="showDetails(3)">
-                <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0844444531791d41868e9e9e29e79b43.jpg" alt="Sporty Piping Tee" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-                <div class="relative z-10 space-y-2">
-                    <span class="text-[10px] tracking-[0.2em] uppercase text-zinc-400 font-semibold">Trending</span>
-                    <h3 class="text-lg font-bold text-white uppercase tracking-wider">Sporty Piping Tee</h3>
-                    <button class="bg-white hover:bg-zinc-200 text-black text-[10px] font-bold py-2 px-4 w-fit transition uppercase tracking-widest">Shop Now</button>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide min-w-full px-1">
+                <div onclick="showDetails(3)"
+                     class="relative overflow-hidden aspect-[16/7] sm:aspect-[16/6]
+                            bg-zinc-900 border border-zinc-800 cursor-pointer group">
+
+                    <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0844444531791d41868e9e9e29e79b43.jpg"
+                         alt="Sporty Piping Tee"
+                         class="absolute inset-0 w-full h-full object-cover
+                                group-hover:scale-105 transition-transform duration-700">
+
+                    <div class="absolute inset-0 bg-gradient-to-r
+                                from-black/90 via-black/40 to-transparent"></div>
+
+                    <div class="absolute inset-0 flex items-center p-6 sm:p-12">
+
+                        <div class="max-w-md space-y-3">
+
+                            <span class="inline-block text-[10px] sm:text-xs
+                                         tracking-[0.25em] uppercase
+                                         text-zinc-300 font-semibold">
+                                Trending
+                            </span>
+
+                            <h2 class="text-2xl sm:text-4xl md:text-5xl
+                                       font-black text-white uppercase
+                                       tracking-wider">
+                                Sporty Piping Tee
+                            </h2>
+
+                            <p class="text-zinc-300 text-xs sm:text-sm max-w-sm">
+                                Modern sporty design with a premium finish.
+                            </p>
+
+                            <button
+                                class="mt-2 bg-white hover:bg-zinc-200
+                                       text-black text-[10px] sm:text-xs
+                                       font-bold py-3 px-6
+                                       uppercase tracking-widest
+                                       transition-all duration-300
+                                       hover:px-8">
+                                Shop Now →
+                            </button>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Ad 3 -->
-            <div class="relative overflow-hidden aspect-[4/5] bg-zinc-900 border border-zinc-800 flex flex-col justify-end p-6 group cursor-pointer" onclick="showDetails(5)">
-                <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/10d6b78f568b14dc0c249abb68b196f7.jpg" alt="Acid Wash Tee" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-                <div class="relative z-10 space-y-2">
-                    <span class="text-[10px] tracking-[0.2em] uppercase text-zinc-400 font-semibold">New Arrival</span>
-                    <h3 class="text-lg font-bold text-white uppercase tracking-wider">Acid Wash Tee</h3>
-                    <button class="bg-white hover:bg-zinc-200 text-black text-[10px] font-bold py-2 px-4 w-fit transition uppercase tracking-widest">Shop Now</button>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide min-w-full px-1">
+                <div onclick="showDetails(5)"
+                     class="relative overflow-hidden aspect-[16/7] sm:aspect-[16/6]
+                            bg-zinc-900 border border-zinc-800 cursor-pointer group">
+
+                    <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/10d6b78f568b14dc0c249abb68b196f7.jpg"
+                         alt="Acid Wash Tee"
+                         class="absolute inset-0 w-full h-full object-cover
+                                group-hover:scale-105 transition-transform duration-700">
+
+                    <div class="absolute inset-0 bg-gradient-to-r
+                                from-black/90 via-black/40 to-transparent"></div>
+
+                    <div class="absolute inset-0 flex items-center p-6 sm:p-12">
+
+                        <div class="max-w-md space-y-3">
+
+                            <span class="inline-block text-[10px] sm:text-xs
+                                         tracking-[0.25em] uppercase
+                                         text-zinc-300 font-semibold">
+                                New Arrival
+                            </span>
+
+                            <h2 class="text-2xl sm:text-4xl md:text-5xl
+                                       font-black text-white uppercase
+                                       tracking-wider">
+                                Acid Wash Tee
+                            </h2>
+
+                            <p class="text-zinc-300 text-xs sm:text-sm max-w-sm">
+                                Fresh streetwear style made for the modern look.
+                            </p>
+
+                            <button
+                                class="mt-2 bg-white hover:bg-zinc-200
+                                       text-black text-[10px] sm:text-xs
+                                       font-bold py-3 px-6
+                                       uppercase tracking-widest
+                                       transition-all duration-300
+                                       hover:px-8">
+                                Shop Now →
+                            </button>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
-    </section>
+
+
+        <!-- Slider Dots -->
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2
+                    flex gap-2 z-20">
+
+            <button onclick="goToSlide(0)"
+                    class="slider-dot w-6 h-1.5 bg-white transition-all duration-300"></button>
+
+            <button onclick="goToSlide(1)"
+                    class="slider-dot w-2 h-1.5 bg-zinc-500 transition-all duration-300"></button>
+
+            <button onclick="goToSlide(2)"
+                    class="slider-dot w-2 h-1.5 bg-zinc-500 transition-all duration-300"></button>
+
+        </div>
+
+
+        <!-- Previous Button -->
+        <button onclick="prevSlide()"
+                class="absolute left-4 top-1/2 -translate-y-1/2
+                       w-10 h-10 rounded-full
+                       bg-black/50 backdrop-blur-sm
+                       border border-white/20 text-white
+                       hover:bg-white hover:text-black
+                       transition-all duration-300 z-20">
+            ←
+        </button>
+
+
+        <!-- Next Button -->
+        <button onclick="nextSlide()"
+                class="absolute right-4 top-1/2 -translate-y-1/2
+                       w-10 h-10 rounded-full
+                       bg-black/50 backdrop-blur-sm
+                       border border-white/20 text-white
+                       hover:bg-white hover:text-black
+                       transition-all duration-300 z-20">
+            →
+        </button>
+
+    </div>
+</section>
+
+
+<!-- Slider JavaScript -->
+<script>
+
+    let currentSlide = 0;
+    const totalSlides = 3;
+
+    const slider = document.getElementById("heroSlider");
+    const dots = document.querySelectorAll(".slider-dot");
+
+    function updateSlider() {
+
+        // Right → Left movement
+        slider.style.transform =
+            `translateX(-${currentSlide * 100}%)`;
+
+        // Update dots
+        dots.forEach((dot, index) => {
+
+            if (index === currentSlide) {
+                dot.classList.remove("w-2", "bg-zinc-500");
+                dot.classList.add("w-6", "bg-white");
+            } else {
+                dot.classList.remove("w-6", "bg-white");
+                dot.classList.add("w-2", "bg-zinc-500");
+            }
+
+        });
+    }
+
+
+    function nextSlide() {
+
+        currentSlide++;
+
+        if (currentSlide >= totalSlides) {
+            currentSlide = 0;
+        }
+
+        updateSlider();
+    }
+
+
+    function prevSlide() {
+
+        currentSlide--;
+
+        if (currentSlide < 0) {
+            currentSlide = totalSlides - 1;
+        }
+
+        updateSlider();
+    }
+
+
+    function goToSlide(index) {
+
+        currentSlide = index;
+        updateSlider();
+
+    }
+
+
+    // Auto Slide
+    let autoSlide = setInterval(nextSlide, 4500);
+
+
+    // Pause when mouse is over slider
+    const sliderArea = document.getElementById("heroSlider");
+
+    sliderArea.addEventListener("mouseenter", () => {
+        clearInterval(autoSlide);
+    });
+
+    sliderArea.addEventListener("mouseleave", () => {
+        autoSlide = setInterval(nextSlide, 4500);
+    });
+
+
+    // Mobile Touch Swipe
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    sliderArea.addEventListener("touchstart", (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    sliderArea.addEventListener("touchend", (e) => {
+
+        touchEndX = e.changedTouches[0].screenX;
+
+        if (touchStartX - touchEndX > 50) {
+            nextSlide();
+        }
+
+        if (touchEndX - touchStartX > 50) {
+            prevSlide();
+        }
+
+    });
+
+</script>
 
     <!-- Main Product Section -->
     <main class="max-w-7xl mx-auto px-4 sm:px-8 py-12 flex-grow w-full">
