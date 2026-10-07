@@ -105,258 +105,700 @@
         </div>
     </header>
 
-<!-- ================================
+<!-- =========================================
      PREMIUM PRODUCT AD SLIDER
-     ================================ -->
+========================================= -->
 
-<section class="zara-ad-section">
+<section class="product-ad-section">
 
-    <div class="zara-slider">
+    <div class="product-slider" id="productSlider">
 
-        <!-- Product 1 -->
-        <a href="#" class="zara-slide active">
-            <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0844444531791d41868e9e9e29e79b43.jpg"
-                 alt="Black Premium T-Shirt">
+        <!-- ===============================
+             PRODUCT 1
+        ================================ -->
 
-            <div class="zara-overlay">
-                <div class="zara-content">
+        <div class="product-slide active">
+
+            <img
+                src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/d1b8db0379f035dc950ece4ea1a5fc19.jpg"
+                alt="Premium T-Shirt"
+            >
+
+            <div class="product-overlay">
+
+                <div class="product-info">
+
                     <p>NEW COLLECTION</p>
-                    <h2>ESSENTIAL<br>BLACK TEE</h2>
-                    <span>SHOP NOW →</span>
+
+                    <h2>
+                        PREMIUM<br>
+                        T-SHIRT
+                    </h2>
+
+                    <div class="product-price">
+                        ৳599
+                    </div>
+
+                    <a
+                        href="product1.html"
+                        class="order-btn"
+                    >
+                        ORDER NOW →
+                    </a>
+
                 </div>
+
             </div>
-        </a>
 
-        <!-- Product 2 -->
-        <a href="#" class="zara-slide">
-            <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/d1b8db0379f035dc950ece4ea1a5fc19.jpg"
-                 alt="Premium Fashion">
-
-            <div class="zara-overlay">
-                <div class="zara-content">
-                    <p>MEN'S COLLECTION</p>
-                    <h2>URBAN<br>ESSENTIALS</h2>
-                    <span>SHOP NOW →</span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Product 3 -->
-        <a href="#" class="zara-slide">
-            <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0844444531791d41868e9e9e29e79b43.jpg"
-                 alt="New Fashion Collection">
-
-            <div class="zara-overlay">
-                <div class="zara-content">
-                    <p>LIMITED EDITION</p>
-                    <h2>NEW<br>ARRIVALS</h2>
-                    <span>SHOP NOW →</span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Dots -->
-        <div class="zara-dots">
-            <button class="zara-dot active"></button>
-            <button class="zara-dot"></button>
-            <button class="zara-dot"></button>
         </div>
+
+
+        <!-- ===============================
+             PRODUCT 2
+        ================================ -->
+
+        <div class="product-slide">
+
+            <img
+                src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/d1b8db0379f035dc950ece4ea1a5fc19.jpg"
+                alt="Drop Shoulder T-Shirt"
+            >
+
+            <div class="product-overlay">
+
+                <div class="product-info">
+
+                    <p>NEW ARRIVAL</p>
+
+                    <h2>
+                        DROP<br>
+                        SHOULDER
+                    </h2>
+
+                    <div class="product-price">
+                        ৳699
+                    </div>
+
+                    <a
+                        href="product2.html"
+                        class="order-btn"
+                    >
+                        ORDER NOW →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===============================
+             PRODUCT 3
+        ================================ -->
+
+        <div class="product-slide">
+
+            <img
+                src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/d1b8db0379f035dc950ece4ea1a5fc19.jpg"
+                alt="Premium Collection"
+            >
+
+            <div class="product-overlay">
+
+                <div class="product-info">
+
+                    <p>LIMITED EDITION</p>
+
+                    <h2>
+                        PREMIUM<br>
+                        COLLECTION
+                    </h2>
+
+                    <div class="product-price">
+                        ৳799
+                    </div>
+
+                    <a
+                        href="product3.html"
+                        class="order-btn"
+                    >
+                        ORDER NOW →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===============================
+             SLIDER DOTS
+        ================================ -->
+
+        <div class="slider-dots">
+
+            <button
+                class="slider-dot active"
+                data-slide="0">
+            </button>
+
+            <button
+                class="slider-dot"
+                data-slide="1">
+            </button>
+
+            <button
+                class="slider-dot"
+                data-slide="2">
+            </button>
+
+        </div>
+
+
+        <!-- ===============================
+             ARROWS
+        ================================ -->
+
+        <button
+            class="slider-arrow prev"
+            id="prevBtn"
+            aria-label="Previous product">
+            ‹
+        </button>
+
+        <button
+            class="slider-arrow next"
+            id="nextBtn"
+            aria-label="Next product">
+            ›
+        </button>
 
     </div>
 
 </section>
 
 
+
 <style>
 
-/* ================================
-   MAIN SLIDER
-   ================================ */
+/* =========================================
+   MAIN SECTION
+========================================= */
 
-.zara-ad-section {
+.product-ad-section {
+
     width: 100%;
+
     background: #000;
+
     overflow: hidden;
+
 }
 
-.zara-slider {
-    width: 100%;
-    height: 620px;
+
+/* =========================================
+   SLIDER
+========================================= */
+
+.product-slider {
+
     position: relative;
+
+    width: 100%;
+
+    /*
+       Responsive height.
+       PC screen অনুযায়ী automatically adjust হবে।
+    */
+
+    height: min(650px, 75vh);
+
+    min-height: 480px;
+
     overflow: hidden;
+
+    background: #000;
+
+    touch-action: pan-y;
+
+    user-select: none;
+
 }
 
-/* Individual Slide */
 
-.zara-slide {
+/* =========================================
+   SLIDES
+========================================= */
+
+.product-slide {
+
     position: absolute;
+
     inset: 0;
+
     width: 100%;
+
     height: 100%;
 
     opacity: 0;
+
     visibility: hidden;
 
     transform: translateX(100%);
 
     transition:
-        transform 0.9s cubic-bezier(.77,0,.18,1),
-        opacity 0.7s ease,
-        visibility 0.9s;
+        transform .8s cubic-bezier(.77,0,.18,1),
+        opacity .5s ease,
+        visibility .8s;
 
-    display: block;
 }
 
-/* Active Slide */
 
-.zara-slide.active {
+/* ACTIVE SLIDE */
+
+.product-slide.active {
+
     opacity: 1;
+
     visibility: visible;
+
     transform: translateX(0);
+
 }
 
-/* Previous Slide */
 
-.zara-slide.previous {
+/* PREVIOUS SLIDE */
+
+.product-slide.previous {
+
+    opacity: 0;
+
+    visibility: visible;
+
     transform: translateX(-100%);
+
 }
 
-/* Image */
 
-.zara-slide img {
+/* =========================================
+   PRODUCT IMAGE
+========================================= */
+
+.product-slide img {
+
     width: 100%;
+
     height: 100%;
-    object-fit: cover;
+
+    /*
+       IMPORTANT:
+       Product crop হবে না।
+    */
+
+    object-fit: contain;
+
+    object-position: center;
+
     display: block;
+
+    background: #000;
+
+    pointer-events: none;
+
 }
 
 
-/* ================================
+/* =========================================
    DARK GRADIENT
-   ================================ */
+========================================= */
 
-.zara-overlay {
+.product-overlay {
+
     position: absolute;
+
     inset: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    pointer-events: none;
 
     background:
         linear-gradient(
             90deg,
-            rgba(0,0,0,.55),
-            rgba(0,0,0,.08) 60%,
-            rgba(0,0,0,.15)
+            rgba(0,0,0,.60) 0%,
+            rgba(0,0,0,.25) 38%,
+            rgba(0,0,0,.05) 70%,
+            rgba(0,0,0,0) 100%
         );
 
-    display: flex;
-    align-items: center;
 }
 
 
-/* ================================
-   TEXT
-   ================================ */
+/* =========================================
+   PRODUCT INFORMATION
+========================================= */
 
-.zara-content {
-    color: white;
+.product-info {
+
     margin-left: 8%;
-    text-align: left;
+
+    color: #fff;
+
+    pointer-events: auto;
+
 }
 
-.zara-content p {
-    font-size: 13px;
+
+.product-info p {
+
+    margin: 0 0 18px;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
     letter-spacing: 4px;
-    margin-bottom: 18px;
-    font-weight: 500;
+
 }
 
-.zara-content h2 {
-    font-size: clamp(42px, 6vw, 85px);
-    line-height: .9;
+
+.product-info h2 {
+
+    margin: 0 0 20px;
+
+    font-size: clamp(42px, 6vw, 82px);
+
+    line-height: .92;
+
     font-weight: 500;
+
     letter-spacing: -3px;
-    margin: 0 0 30px;
+
 }
 
-.zara-content span {
+
+.product-price {
+
+    margin-bottom: 25px;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+}
+
+
+/* =========================================
+   SIMPLE ORDER NOW BUTTON
+========================================= */
+
+.order-btn {
+
     display: inline-block;
+
+    color: #fff;
+
+    text-decoration: none;
+
     font-size: 13px;
+
+    font-weight: 400;
+
     letter-spacing: 2px;
 
-    border-bottom: 1px solid white;
     padding-bottom: 8px;
 
-    transition: .3s ease;
+    border-bottom: 1px solid #fff;
+
+    transition:
+        letter-spacing .3s ease,
+        opacity .3s ease;
+
 }
 
-.zara-content span:hover {
-    letter-spacing: 4px;
+
+.order-btn:hover {
+
+    color: #fff;
+
+    opacity: .7;
+
+    letter-spacing: 3px;
+
 }
 
 
-/* ================================
+/* =========================================
    DOTS
-   ================================ */
+========================================= */
 
-.zara-dots {
+.slider-dots {
+
     position: absolute;
-    bottom: 25px;
+
     left: 50%;
+
+    bottom: 25px;
 
     transform: translateX(-50%);
 
     display: flex;
+
+    align-items: center;
+
     gap: 8px;
 
-    z-index: 20;
+    z-index: 30;
+
 }
 
-.zara-dot {
+
+.slider-dot {
+
     width: 35px;
+
     height: 2px;
 
-    border: none;
     padding: 0;
 
-    background: rgba(255,255,255,.4);
+    border: 0;
+
+    background: rgba(255,255,255,.45);
 
     cursor: pointer;
 
-    transition: .4s ease;
+    transition:
+        width .3s ease,
+        background .3s ease;
+
 }
 
-.zara-dot.active {
+
+.slider-dot.active {
+
     width: 55px;
-    background: white;
+
+    background: #fff;
+
 }
 
 
-/* ================================
+/* =========================================
+   PREVIOUS / NEXT ARROWS
+========================================= */
+
+.slider-arrow {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 40;
+
+    width: 42px;
+
+    height: 42px;
+
+    border: 1px solid rgba(255,255,255,.45);
+
+    border-radius: 50%;
+
+    background: rgba(0,0,0,.15);
+
+    color: #fff;
+
+    font-size: 28px;
+
+    font-weight: 200;
+
+    line-height: 35px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+        background .3s ease,
+        color .3s ease;
+
+}
+
+
+.slider-arrow:hover {
+
+    background: #fff;
+
+    color: #000;
+
+}
+
+
+.slider-arrow.prev {
+
+    left: 20px;
+
+}
+
+
+.slider-arrow.next {
+
+    right: 20px;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .product-slider {
+
+        height: 560px;
+
+    }
+
+    .product-info {
+
+        margin-left: 7%;
+
+    }
+
+}
+
+
+/* =========================================
    MOBILE
-   ================================ */
+========================================= */
 
 @media (max-width: 768px) {
 
-    .zara-slider {
+    .product-slider {
+
         height: 520px;
+
+        min-height: 0;
+
     }
 
-    .zara-content {
+
+    .product-slide img {
+
+        object-fit: contain;
+
+    }
+
+
+    .product-overlay {
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(0,0,0,.65),
+                rgba(0,0,0,.10)
+            );
+
+    }
+
+
+    .product-info {
+
         margin-left: 7%;
+
         margin-right: 7%;
+
     }
 
-    .zara-content p {
+
+    .product-info p {
+
+        margin-bottom: 14px;
+
         font-size: 10px;
+
         letter-spacing: 3px;
+
     }
 
-    .zara-content h2 {
-        font-size: 45px;
+
+    .product-info h2 {
+
+        font-size: 44px;
+
         letter-spacing: -2px;
+
+        margin-bottom: 16px;
+
     }
 
-    .zara-slide img {
-        object-position: center;
+
+    .product-price {
+
+        font-size: 18px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .order-btn {
+
+        font-size: 12px;
+
+        letter-spacing: 1.5px;
+
+    }
+
+
+    /*
+       Mobile-এ arrow বাদ।
+       Swipe করলেই slide হবে।
+    */
+
+    .slider-arrow {
+
+        display: none;
+
+    }
+
+
+    .slider-dots {
+
+        bottom: 20px;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .product-slider {
+
+        height: 480px;
+
+    }
+
+
+    .product-info h2 {
+
+        font-size: 37px;
+
     }
 
 }
@@ -364,93 +806,320 @@
 </style>
 
 
+
 <script>
 
-/* ================================
-   ZARA STYLE AUTO SLIDER
-   ================================ */
+/* =========================================
+   PRODUCT SLIDER JAVASCRIPT
+========================================= */
 
-const slides = document.querySelectorAll('.zara-slide');
-const dots = document.querySelectorAll('.zara-dot');
+const slider =
+    document.getElementById("productSlider");
+
+const slides =
+    document.querySelectorAll(".product-slide");
+
+const dots =
+    document.querySelectorAll(".slider-dot");
+
+const nextBtn =
+    document.getElementById("nextBtn");
+
+const prevBtn =
+    document.getElementById("prevBtn");
+
 
 let currentSlide = 0;
-let slideTimer;
+
+let autoSlide;
 
 
-/* Show Slide */
+/* =========================================
+   SHOW SLIDE
+========================================= */
 
 function showSlide(index) {
 
+    if (index >= slides.length) {
+
+        index = 0;
+
+    }
+
+    if (index < 0) {
+
+        index = slides.length - 1;
+
+    }
+
+
     slides.forEach((slide, i) => {
 
-        slide.classList.remove('active');
-        slide.classList.remove('previous');
+        slide.classList.remove("active");
+
+        slide.classList.remove("previous");
+
 
         if (i < index) {
-            slide.classList.add('previous');
+
+            slide.classList.add("previous");
+
         }
 
     });
 
-    slides[index].classList.add('active');
+
+    slides[index].classList.add("active");
+
 
     dots.forEach(dot => {
-        dot.classList.remove('active');
+
+        dot.classList.remove("active");
+
     });
 
-    dots[index].classList.add('active');
+
+    dots[index].classList.add("active");
+
 
     currentSlide = index;
+
 }
 
 
-/* Next Slide */
+/* =========================================
+   NEXT SLIDE
+========================================= */
 
 function nextSlide() {
 
-    let next = currentSlide + 1;
-
-    if (next >= slides.length) {
-        next = 0;
-    }
-
-    showSlide(next);
-}
-
-
-/* Auto Play */
-
-function startSlider() {
-
-    slideTimer = setInterval(nextSlide, 4500);
+    showSlide(currentSlide + 1);
 
 }
 
 
-/* Dot Click */
+/* =========================================
+   PREVIOUS SLIDE
+========================================= */
+
+function previousSlide() {
+
+    showSlide(currentSlide - 1);
+
+}
+
+
+/* =========================================
+   AUTO SLIDE
+========================================= */
+
+function startAutoSlide() {
+
+    clearInterval(autoSlide);
+
+    autoSlide = setInterval(() => {
+
+        nextSlide();
+
+    }, 4500);
+
+}
+
+
+/* =========================================
+   NEXT BUTTON
+========================================= */
+
+nextBtn.addEventListener("click", function(e) {
+
+    e.preventDefault();
+
+    nextSlide();
+
+    startAutoSlide();
+
+});
+
+
+/* =========================================
+   PREVIOUS BUTTON
+========================================= */
+
+prevBtn.addEventListener("click", function(e) {
+
+    e.preventDefault();
+
+    previousSlide();
+
+    startAutoSlide();
+
+});
+
+
+/* =========================================
+   DOT BUTTON
+========================================= */
 
 dots.forEach((dot, index) => {
 
-    dot.addEventListener('click', () => {
+    dot.addEventListener("click", function(e) {
 
-        clearInterval(slideTimer);
+        e.preventDefault();
 
         showSlide(index);
 
-        startSlider();
+        startAutoSlide();
 
     });
 
 });
 
 
-/* Start */
+/* =========================================
+   TOUCH / SWIPE
+========================================= */
+
+let touchStartX = 0;
+
+let touchEndX = 0;
+
+
+slider.addEventListener(
+    "touchstart",
+    function(e) {
+
+        touchStartX =
+            e.touches[0].clientX;
+
+    },
+    { passive: true }
+);
+
+
+slider.addEventListener(
+    "touchend",
+    function(e) {
+
+        touchEndX =
+            e.changedTouches[0].clientX;
+
+        handleSwipe();
+
+    },
+    { passive: true }
+);
+
+
+/* =========================================
+   MOUSE DRAG
+========================================= */
+
+let mouseStartX = 0;
+
+let isMouseDown = false;
+
+
+slider.addEventListener(
+    "mousedown",
+    function(e) {
+
+        mouseStartX = e.clientX;
+
+        isMouseDown = true;
+
+    }
+);
+
+
+slider.addEventListener(
+    "mouseup",
+    function(e) {
+
+        if (!isMouseDown) return;
+
+        const difference =
+            mouseStartX - e.clientX;
+
+        isMouseDown = false;
+
+
+        if (Math.abs(difference) < 50) {
+
+            return;
+
+        }
+
+
+        if (difference > 0) {
+
+            nextSlide();
+
+        } else {
+
+            previousSlide();
+
+        }
+
+
+        startAutoSlide();
+
+    }
+);
+
+
+/* =========================================
+   HANDLE TOUCH SWIPE
+========================================= */
+
+function handleSwipe() {
+
+    const difference =
+        touchStartX - touchEndX;
+
+
+    const minimumSwipe = 50;
+
+
+    if (Math.abs(difference) < minimumSwipe) {
+
+        return;
+
+    }
+
+
+    if (difference > 0) {
+
+        /*
+           Swipe LEFT
+        */
+
+        nextSlide();
+
+    } else {
+
+        /*
+           Swipe RIGHT
+        */
+
+        previousSlide();
+
+    }
+
+
+    startAutoSlide();
+
+}
+
+
+/* =========================================
+   START SLIDER
+========================================= */
 
 showSlide(0);
-startSlider();
+
+startAutoSlide();
 
 </script>
-
 
     <!-- Main Catalog Section -->
     <main class="max-w-7xl mx-auto px-4 sm:px-8 py-12 flex-grow w-full">
