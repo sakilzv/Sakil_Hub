@@ -105,34 +105,351 @@
         </div>
     </header>
 
-   <div class="slide">
-    <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/257d870e812c1b8156c506898c899b22.jpg" alt="Product 1">
-    <div class="slide-content">
-        <h2>Full Sleeve Shirt</h2>
-        <p>Limited Edition Drop</p>
+<!-- ================================
+     PREMIUM PRODUCT AD SLIDER
+     ================================ -->
+
+<section class="zara-ad-section">
+
+    <div class="zara-slider">
+
+        <!-- Product 1 -->
+        <a href="#" class="zara-slide active">
+            <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0844444531791d41868e9e9e29e79b43.jpg"
+                 alt="Black Premium T-Shirt">
+
+            <div class="zara-overlay">
+                <div class="zara-content">
+                    <p>NEW COLLECTION</p>
+                    <h2>ESSENTIAL<br>BLACK TEE</h2>
+                    <span>SHOP NOW →</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Product 2 -->
+        <a href="#" class="zara-slide">
+            <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/d1b8db0379f035dc950ece4ea1a5fc19.jpg"
+                 alt="Premium Fashion">
+
+            <div class="zara-overlay">
+                <div class="zara-content">
+                    <p>MEN'S COLLECTION</p>
+                    <h2>URBAN<br>ESSENTIALS</h2>
+                    <span>SHOP NOW →</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Product 3 -->
+        <a href="#" class="zara-slide">
+            <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/0844444531791d41868e9e9e29e79b43.jpg"
+                 alt="New Fashion Collection">
+
+            <div class="zara-overlay">
+                <div class="zara-content">
+                    <p>LIMITED EDITION</p>
+                    <h2>NEW<br>ARRIVALS</h2>
+                    <span>SHOP NOW →</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Dots -->
+        <div class="zara-dots">
+            <button class="zara-dot active"></button>
+            <button class="zara-dot"></button>
+            <button class="zara-dot"></button>
+        </div>
+
     </div>
-</div>
-<div class="slide">
-    <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/2ad8a953c262df61ac02e2362dfb1a97.jpg" alt="Product 2">
-    <div class="slide-content">
-        <h2>Cotton T-Shirt</h2>
-        <p>Comfortable and Stylish</p>
-    </div>
-</div>
-<div class="slide">
-    <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/file_00000000118882118fb98454cd248639.png" alt="Product 3">
-    <div class="slide-content">
-        <h2>Denim Jacket</h2>
-        <p>Perfect for Winter</p>
-    </div>
-</div>
-<div class="slide">
-    <img src="https://raw.githubusercontent.com/xakil07/Cloding/refs/heads/main/257d870e812c1b8156c506898c899b22.jpg" alt="Product 4">
-    <div class="slide-content">
-        <h2>Formal Trousers</h2>
-        <p>For Office or Any Occasion</p>
-    </div>
-</div>
+
+</section>
+
+
+<style>
+
+/* ================================
+   MAIN SLIDER
+   ================================ */
+
+.zara-ad-section {
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+}
+
+.zara-slider {
+    width: 100%;
+    height: 620px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Individual Slide */
+
+.zara-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateX(100%);
+
+    transition:
+        transform 0.9s cubic-bezier(.77,0,.18,1),
+        opacity 0.7s ease,
+        visibility 0.9s;
+
+    display: block;
+}
+
+/* Active Slide */
+
+.zara-slide.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* Previous Slide */
+
+.zara-slide.previous {
+    transform: translateX(-100%);
+}
+
+/* Image */
+
+.zara-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ================================
+   DARK GRADIENT
+   ================================ */
+
+.zara-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.08) 60%,
+            rgba(0,0,0,.15)
+        );
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ================================
+   TEXT
+   ================================ */
+
+.zara-content {
+    color: white;
+    margin-left: 8%;
+    text-align: left;
+}
+
+.zara-content p {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.zara-content h2 {
+    font-size: clamp(42px, 6vw, 85px);
+    line-height: .9;
+    font-weight: 500;
+    letter-spacing: -3px;
+    margin: 0 0 30px;
+}
+
+.zara-content span {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 2px;
+
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+
+    transition: .3s ease;
+}
+
+.zara-content span:hover {
+    letter-spacing: 4px;
+}
+
+
+/* ================================
+   DOTS
+   ================================ */
+
+.zara-dots {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 8px;
+
+    z-index: 20;
+}
+
+.zara-dot {
+    width: 35px;
+    height: 2px;
+
+    border: none;
+    padding: 0;
+
+    background: rgba(255,255,255,.4);
+
+    cursor: pointer;
+
+    transition: .4s ease;
+}
+
+.zara-dot.active {
+    width: 55px;
+    background: white;
+}
+
+
+/* ================================
+   MOBILE
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .zara-slider {
+        height: 520px;
+    }
+
+    .zara-content {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    .zara-content p {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .zara-content h2 {
+        font-size: 45px;
+        letter-spacing: -2px;
+    }
+
+    .zara-slide img {
+        object-position: center;
+    }
+
+}
+
+</style>
+
+
+<script>
+
+/* ================================
+   ZARA STYLE AUTO SLIDER
+   ================================ */
+
+const slides = document.querySelectorAll('.zara-slide');
+const dots = document.querySelectorAll('.zara-dot');
+
+let currentSlide = 0;
+let slideTimer;
+
+
+/* Show Slide */
+
+function showSlide(index) {
+
+    slides.forEach((slide, i) => {
+
+        slide.classList.remove('active');
+        slide.classList.remove('previous');
+
+        if (i < index) {
+            slide.classList.add('previous');
+        }
+
+    });
+
+    slides[index].classList.add('active');
+
+    dots.forEach(dot => {
+        dot.classList.remove('active');
+    });
+
+    dots[index].classList.add('active');
+
+    currentSlide = index;
+}
+
+
+/* Next Slide */
+
+function nextSlide() {
+
+    let next = currentSlide + 1;
+
+    if (next >= slides.length) {
+        next = 0;
+    }
+
+    showSlide(next);
+}
+
+
+/* Auto Play */
+
+function startSlider() {
+
+    slideTimer = setInterval(nextSlide, 4500);
+
+}
+
+
+/* Dot Click */
+
+dots.forEach((dot, index) => {
+
+    dot.addEventListener('click', () => {
+
+        clearInterval(slideTimer);
+
+        showSlide(index);
+
+        startSlider();
+
+    });
+
+});
+
+
+/* Start */
+
+showSlide(0);
+startSlider();
+
+</script>
 
 
     <!-- Main Catalog Section -->
