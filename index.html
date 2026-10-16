@@ -1451,8 +1451,8 @@ startAutoSlide();
                 
                 card.innerHTML = `
                     <div class="relative overflow-hidden bg-zinc-900 aspect-[3/4] mb-3 border border-zinc-900">
-                        <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute bottom-2 left-2 bg-black text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1">
+                        product.video ? `<video src="${product.video}" controls autoplay loop muted class="w-full h-full object-cover"></video>` : `<img src="${product.img}" alt="${product.title}" class="w-full h-full object-cover">`
+                    <div class="absolute bottom-2 left-2 bg-black text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1">
                             ${p.price}৳
                         </div>
                     </div>
