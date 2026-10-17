@@ -1234,11 +1234,60 @@ startAutoSlide();
     <script>
         const products = [
             { 
-                id: 1, 
-                title: "THE UNIVERSE GRAPHIC T-SHIRT", 
-                price: 399, 
-                img: "e31fd8ddafd6134bc2a72ced3cd54fbd.jpg", 
-                desc: "Premium organic cotton check shirt featuring stylized streetwear pattern." 
+                function renderProducts() {
+    const container = document.getElementById('product-list');
+    container.innerHTML = products.map(product => {
+        function initSwipers() {
+    products.forEach(product => {
+        if (product.images && product.images.length > 0) {
+            new Swiper(`.swiper-${product.id}`, {
+                loop: true,
+                navigation: {
+                    nextEl: `.swiper-${product.id} .swiper-button-next`,
+                    prevEl: `.swiper-${product.id} .swiper-button-prev`,
+                },
+                pagination: {
+                    el: `.swiper-${product.id} .swiper-pagination`,
+                    clickable: true,
+                },
+            });
+        }
+    });
+        }
+        
+        let imageMarkup = '';
+        if (product.images && product.images.length > 0) {
+            imageMarkup = `
+                <div class="swiper swiper-${product.id}">
+                    <div class="swiper-wrapper">
+                        ${product.images.map(img => `
+                            <div class="swiper-slide">
+                                <img src="${img}" alt="${product.title}" style="width: 100%; display: block;" />
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            `;
+        } else {
+    
+            imageMarkup = `<img src="${product.img}" alt="${product.title}" />`;
+        }
+
+        return `
+            <div class="product-card">
+                ${imageMarkup}
+                <h3>${product.title}</h3>
+                <p>PRICE • ${product.price}৳</p>
+            </div>
+        `;
+    }).join('');
+
+    initSwipers();
+}
+
             },
             { 
                 id: 2, 
