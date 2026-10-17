@@ -1226,35 +1226,9 @@ startAutoSlide();
     </div>
 
     <!-- Footer -->
-    <footer class="bg-black text-zinc-600 text-[10px] tracking-[0.2em] uppercase py-10 border-t border-zinc-900 text-center space-y-2">
-        <p class="text-zinc-300 font-bold tracking-[0.3em]">SAKIL STYLE HUB</p>
-        <p>&copy; 2026 ALL RIGHTS RESERVED.</p>
-    </footer>
-
-    <script>
-        const products = [
-            { 
-                function renderProducts() {
+    function renderProducts() {
     const container = document.getElementById('product-list');
     container.innerHTML = products.map(product => {
-        function initSwipers() {
-    products.forEach(product => {
-        if (product.images && product.images.length > 0) {
-            new Swiper(`.swiper-${product.id}`, {
-                loop: true,
-                navigation: {
-                    nextEl: `.swiper-${product.id} .swiper-button-next`,
-                    prevEl: `.swiper-${product.id} .swiper-button-prev`,
-                },
-                pagination: {
-                    el: `.swiper-${product.id} .swiper-pagination`,
-                    clickable: true,
-                },
-            });
-        }
-    });
-        }
-        
         let imageMarkup = '';
         if (product.images && product.images.length > 0) {
             imageMarkup = `
@@ -1272,7 +1246,6 @@ startAutoSlide();
                 </div>
             `;
         } else {
-    
             imageMarkup = `<img src="${product.img}" alt="${product.title}" />`;
         }
 
@@ -1287,6 +1260,25 @@ startAutoSlide();
 
     initSwipers();
 }
+
+function initSwipers() {
+    products.forEach(product => {
+        if (product.images && product.images.length > 0) {
+            new Swiper(`.swiper-${product.id}`, {
+                loop: true,
+                navigation: {
+                    nextEl: `.swiper-${product.id} .swiper-button-next`,
+                    prevEl: `.swiper-${product.id} .swiper-button-prev`,
+                },
+                pagination: {
+                    el: `.swiper-${product.id} .swiper-pagination`,
+                    clickable: true,
+                },
+            });
+        }
+    });
+}
+
 
             },
             { 
